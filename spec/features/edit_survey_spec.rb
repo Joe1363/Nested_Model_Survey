@@ -41,7 +41,7 @@ describe 'Edit Survey' do
     expect(page).to have_content "4"
     expect(page).not_to have_content "bacon"
     expect(page).to have_content "What is 3 + 3?"
-    # expect(page).to have_content "6"
+    expect(page).to have_content "6"
 
   end
 end
