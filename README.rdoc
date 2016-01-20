@@ -1,1 +1,3 @@
 A survey application to learn about nested model forms by following railscast #196.
+
+Added tests for new survey and edit survey features. Used selenium-webdriver for js testing and detabase_cleaner gem.
