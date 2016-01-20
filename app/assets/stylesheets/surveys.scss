@@ -1,3 +1,36 @@
-// Place all the styles related to the Surveys controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  background-color: #4e879d;
+  height: 100vh;
+}
+
+body {
+  background-color: transparent;
+}
+
+.white_text {
+  color: white !important;
+}
+
+.page_body {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+.edit_page {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.answer_link {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.underline {
+  text-decoration: underline;
+}

@@ -1,17 +1,21 @@
-<h1><%= @survey.name %></h1>
-
-<ol class="questions">
-<% @survey.questions.each do |question| %>
-  <li>
-    <%= question.content %>
-    <ol class="answers">
-      <% question.answers.each do |answer| %>
-        <li><%= answer.content %></li>
-      <% end %>
-    </ol>
-  </li>
-<% end %>
-</ol>
-
-<%= link_to 'Edit', edit_survey_path(@survey) %> |
-<%= link_to 'Back', surveys_path %>
+<h1 class="text-center white_text"><%= @survey.name %></h1>
+<div class="page_body">
+  <ol class="questions">
+  <% @survey.questions.each do |question| %>
+    <li>
+      <%= question.content %>
+      <ol class="answers">
+        <% question.answers.each do |answer| %>
+          <li><%= answer.content %></li>
+        <% end %>
+      </ol>
+    </li>
+  <% end %>
+  </ol>
+</div>
+<div class="text-center white_text">
+  <h4>
+    <%= link_to 'Edit', edit_survey_path(@survey), class: "white_text" %> |
+    <%= link_to 'Back', surveys_path, class: "white_text" %>
+  </h4>
+</div>
